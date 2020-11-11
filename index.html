@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	img {
+		width: 50%;
+	}
+</style>
+<body id="id">
+	
+</body>
+</html>
+<script type="text/javascript">
+	function getRandomInt(max) {
+	  return Math.floor(Math.random() * Math.floor(max));
+	}
+	var parentEl = document.getElementById("id"),
+	img = document.createElement("IMG");
+	img.src = "./src/" + getRandomInt(46 + 1) + ".jpg";;
+	parentEl.appendChild(img);
+</script>
